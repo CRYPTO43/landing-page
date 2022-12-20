@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fraunces", serif;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  position: relative;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* ============RESUEABLE========== */
+.logo {
+  transform: scale(1.1);
+}
+.main-header {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.main-nav-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+}
+.nav-item {
+  padding: 0 3.6rem;
+}
+.nav-item:link,
+.nav-item:visited {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Barlow", serif;
+  padding: 1.2rem 2.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-items:link,
+.nav-items:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: "Fraunces", serif;
+  background-color: #fff;
+  padding: 1.2rem 2.4rem;
+  font-weight: lighter;
+  border-radius: 50px;
+}
+.nav-items:hover,
+.nav-items:active {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.heading-primary {
+  color: #fff;
+  text-align: center;
+  margin-top: 16rem;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ===================FEATURES=========== */
+.img {
+  display: block;
+  width: 100%;
+}
+.heading-secondary {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+}
+.features-text {
+  font-family: "Barlow", serif;
+  color: hsl(213, 9%, 39%);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.features-main-text {
+  padding: 15rem;
+  align-self: center;
+}
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.8rem;
+}
+.link.yellow {
+  border-bottom: 5px solid hsl(51, 100%, 49%);
+}
+.link.red {
+  border-bottom: 5px solid hsl(7, 99%, 70%);
+}
+/* ===============EXTRA FEATURES========== */
+.img-box {
+  position: relative;
+}
+.text-on-img {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.green {
+  color: hsl(167, 40%, 24%) !important;
+}
+.blue {
+  color: hsl(198, 62%, 26%);
+}
+
+.sub-heading {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+.extra-features-text {
+  font-family: "Barlow", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.4;
+}
+/* ========TESTIMONIALS======= */
+.testimonials {
+  padding: 12.8rem;
+  text-align: center;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  font-family: inherit;
+  color: hsl(232, 10%, 55%);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.testimonial-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin: 6rem 0;
+}
+.testimonial-text {
+  font-family: "Barlow", serif;
+  color: hsl(213, 9%, 39%);
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin-bottom: 6.4rem;
+  padding: 0 4.2rem;
+}
+.name {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.status {
+  font-family: "Barlow", serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: hsl(213, 9%, 39%);
+}
+/* =================GALLERY============ */
+.gallery {
+  width: 100%;
+}
+.gallery-img {
+  width: 100%;
+}
+/* =============FOOTER============= */
+.footer {
+  text-align: center;
+  background-color: rgba(144, 212, 197, 255);
+  padding: 6.4rem;
+}
+.logo-footer {
+  transform: scale(1.1);
+  margin-bottom: 3rem;
+  filter: invert(51%) sepia(9%) saturate(1906%) hue-rotate(118deg)
+    brightness(93%) contrast(87%);
+}
+.about {
+  font-family: "Barlow", serif;
+  font-weight: normal;
+  list-style: none;
+  display: flex;
+  font-size: 1.8rem;
+  gap: 3.8rem;
+  justify-content: center;
+  margin-bottom: 6.8rem;
+}
+.social {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.about-link {
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+}
+.social-icon:hover {
+  stroke: #fff;
+}
